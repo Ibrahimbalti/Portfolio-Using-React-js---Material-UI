@@ -7,8 +7,11 @@ export const HeaderComponent = () => {
     <Box sx={CustomStyle.HeaderWraper} >
       <Navbar/>
         <Box sx={CustomStyle.HeaderContainer}>
-          <Typography variant="h2">
-            Header components
+          <Typography variant="h3" component="h4" sx={CustomStyle.headerTitle}>
+            I'm a UI/UX Designer,|
+          </Typography>
+          <Typography variant="h3" component="h4" sx={CustomStyle.headerDsc}>
+            I Create Website and Application , Base On Your Needs...
           </Typography>
         </Box>
     </Box>

@@ -10,7 +10,18 @@ export const CustomStyle = {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
   },
+  HeaderContainer:{
+    width: "100%",
+    minHeight: "90vh",
+    height: "auto",
+    display:"flex",
+    padding:'20px',
+    flexFlow:'column wrap',
+    justifyContent:'center',
+    color:Theme.colors.base2,
+    fontFamily:"roboto"
 
+  },
   //...............Navbar....................
 
   navbar: {
@@ -26,4 +37,12 @@ export const CustomStyle = {
   navlinks: {
     color: Theme.colors.base2,
   },
+
+  //.........Header....../////
+  headerTitle:{
+    fontSize:"4rem"
+  },
+  headerDsc:{
+    fontSize:"2rem"
+  }
 };
