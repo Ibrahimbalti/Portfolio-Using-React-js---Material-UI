@@ -13,7 +13,8 @@ export const HeaderComponent = () => {
             I'm a UI/UX Designer,|
           </Typography>
           <Typography variant="h3" component="h4" sx={CustomStyle.headerDsc}>
-            I Create Website and Application , Base On Your Needs...
+            I Create Website and Application , <br/>
+            Base On Your Needs...
           </Typography>
           {Decorator({
             label:"About Us",
