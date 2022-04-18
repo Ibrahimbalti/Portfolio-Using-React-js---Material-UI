@@ -39,7 +39,7 @@ export const AboutUs = () => {
     },
   ];
   return (
-    <Box sx={bodyStyle.section}>
+    <Box sx={bodyStyle.section}  id='about us'>
       <Container sx={{paddingTop:"100px"}}>
         <Grid container spacing={1} >
           <Grid item xs={12} sm={5}>
@@ -47,7 +47,7 @@ export const AboutUs = () => {
               <img
                 src={image}
                 alt="about us"
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "100%", height: "100%",marginBottom:"150px" }}
               />
             </Box>
           </Grid>
