@@ -92,5 +92,20 @@ export const bodyStyle = {
       "&:hover":{
         backgroundColor:Theme.colors.primary1
       }
+  },
+
+  footerStyle:{
+    position:'relative',
+    backgroundColor:Theme.colors.primary1,
+    color:Theme.colors.base2,
+    padding:"20px"
+  },
+
+  IconButton:{
+      position:'absolute',
+      right:19,
+      top:-25,
+      backgroundColor:Theme.colors.primary,
+      color:Theme.colors.base2
   }
 };
