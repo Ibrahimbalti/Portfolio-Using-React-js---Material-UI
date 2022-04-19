@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import Typed from 'react-typed'
 import { Box, Typography } from "@mui/material";
 import { CustomStyle } from "./HeaderStyle";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -33,7 +34,8 @@ export const HeaderComponent = () => {
       <DrawerComponent navLink={navLink}  handleDrawerToggle={handleDrawerToggle} initailState={initailState}/>
         <Box sx={CustomStyle.HeaderContainer}>
           <Typography variant="h3" component="h4" sx={CustomStyle.headerTitle}>
-            I'm a UI/UX Designer,|
+            I'm a <span sx={{paddingRight:"5px"}}></span>
+            <Typed strings={["UI/UX Designer,|","Web developer"]} typeSpeed={30} backSpeed={50} loop/>
           </Typography>
           <Typography variant="h3" component="h4" sx={CustomStyle.headerDsc}>
             I Create Website and Application , <br/>

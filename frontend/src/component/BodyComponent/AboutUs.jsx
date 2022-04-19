@@ -9,6 +9,7 @@ import AcUnitIcon from "@mui/icons-material/AcUnit";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PermDeviceInformationIcon from '@mui/icons-material/PermDeviceInformation';
 import GrainIcon from '@mui/icons-material/Grain';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 
 export const AboutUs = () => {
@@ -40,6 +41,7 @@ export const AboutUs = () => {
   ];
   return (
     <Box sx={bodyStyle.section}  id='About'>
+      <ScrollAnimation animateIn='fadeIn'>
       <Container sx={{paddingTop:"100px"}}>
         <Grid container spacing={1} >
           <Grid item xs={12} sm={5}>
@@ -77,6 +79,7 @@ export const AboutUs = () => {
           </Grid>
         </Grid>
       </Container>
+      </ScrollAnimation>
     </Box>
   );
 };

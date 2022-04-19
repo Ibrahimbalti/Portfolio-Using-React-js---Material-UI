@@ -5,6 +5,7 @@ import { Container, Grid, Button } from "@mui/material";
 import image from "../../images/contactus.jpg";
 import { RenderSectionHeading } from "../common/commomComponents";
 import { RenderInputText } from "../common/FormComponents";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 export const Contactus = () => {
 
@@ -37,6 +38,7 @@ export const Contactus = () => {
     
   return (
     <Box sx={bodyStyle.section} id='Contact'>
+      <ScrollAnimation animateIn='fadeIn'>
       <Container sx={{ paddingTop: "100px" }}>
         <Grid container spacing={1}>
           <Grid item xs={12} sm={5}>
@@ -110,6 +112,7 @@ export const Contactus = () => {
           </Grid>
         </Grid>
       </Container>
+      </ScrollAnimation>
     </Box>
   );
 };

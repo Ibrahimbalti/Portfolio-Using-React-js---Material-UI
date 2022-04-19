@@ -10,6 +10,7 @@ import Image6 from "../../images/5-8.jpg";
 import Image7 from "../../images/5-9.jpg";
 import { styled } from "@mui/material/styles";
 import { Theme } from "../color Patern/Theme";
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const ImageContainer = styled("div")(({ theme }) => ({
   position: "relative",
@@ -73,6 +74,7 @@ export const Portfolio = () => {
   ];
   return (
     <Box sx={bodyStyle.sectionDark} id="Portfolio">
+      <ScrollAnimation animateIn='fadeIn'>
       <Grid container>
         <Grid
           item
@@ -115,6 +117,7 @@ export const Portfolio = () => {
           ))}
         </Grid>
       </Container>
+      </ScrollAnimation>
     </Box>
   );
 };
