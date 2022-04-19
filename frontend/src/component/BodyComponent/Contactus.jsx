@@ -36,7 +36,7 @@ export const Contactus = () => {
       };
     
   return (
-    <Box sx={bodyStyle.section} id='contact us'>
+    <Box sx={bodyStyle.section} id='Contact'>
       <Container sx={{ paddingTop: "100px" }}>
         <Grid container spacing={1}>
           <Grid item xs={12} sm={5}>

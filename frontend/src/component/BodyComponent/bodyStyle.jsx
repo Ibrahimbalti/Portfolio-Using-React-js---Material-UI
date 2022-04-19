@@ -107,5 +107,17 @@ export const bodyStyle = {
       top:-25,
       backgroundColor:Theme.colors.primary,
       color:Theme.colors.base2
+  },
+  drawer:{
+    width:'250px',
+    height:"100vh"
+  },
+  drawerWraper:{
+    width:'250px',
+    height:"100vh",
+    backgroundColor:Theme.colors.primary1
+  },
+  listItem:{
+    color:Theme.colors.base2
   }
 };

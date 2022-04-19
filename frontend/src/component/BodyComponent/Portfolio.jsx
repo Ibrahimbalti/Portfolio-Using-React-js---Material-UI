@@ -72,7 +72,7 @@ export const Portfolio = () => {
     },
   ];
   return (
-    <Box sx={bodyStyle.sectionDark}>
+    <Box sx={bodyStyle.sectionDark} id="Portfolio">
       <Grid container>
         <Grid
           item

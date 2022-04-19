@@ -1,26 +1,14 @@
 import React from "react";
+import { Link } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Box, Button,IconButton } from "@mui/material";
+import { Box, Button, IconButton } from "@mui/material";
 import { CustomStyle } from "./HeaderStyle";
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import MenuOpenIcon from "@mui/icons-material/MenuOpen"
 
-export default function Navbar() {
-  const navLink = [
-    {
-      label: "About",
-      id: "About",
-    },
-    {
-      label: "Portfolio",
-      id: "Portfolio",
-    },
-    {
-      label: "Contact",
-      id: "Contact",
-    },
-  ];
+
+export default function Navbar({ navLink, handleDrawerToggle }) {
   return (
     <AppBar position="fixed" sx={CustomStyle.navbar}>
       <Toolbar sx={CustomStyle.toolbar}>
@@ -30,15 +18,22 @@ export default function Navbar() {
         <Box display={{ xs: "none", sm: "block" }}>
           <Box>
             {navLink.map((item, i) => (
-              <Button sx={CustomStyle.navlinks} key={i}>
+              <Link to={`${item.id}`}
+              spy={true} smooth={true} offset={-70} duration={500}>
+              <Button
+                sx={CustomStyle.navlinks}
+                key={i}
+                color="inherit"
+              >
                 {item.label}
               </Button>
+              </Link>
             ))}
           </Box>
         </Box>
 
         <Box display={{ xs: "block", sm: "none" }}>
-          <IconButton color="inherit" onClick={()=>console.log("Hello sir")}>
+          <IconButton color="inherit" onClick={handleDrawerToggle}>
             <MenuOpenIcon />
           </IconButton>
         </Box>
