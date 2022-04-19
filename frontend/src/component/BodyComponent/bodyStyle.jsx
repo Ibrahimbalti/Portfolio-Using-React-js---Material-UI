@@ -12,10 +12,7 @@ export const bodyStyle = {
     marginTop: "16px",
     marginBottom: "16px",
   },
-  responsiveImage: {
-    width: "auto",
-    height: "auto",
-  },
+  
   sectionHeadingCont: {
     color: Theme.colors.base2,
   },

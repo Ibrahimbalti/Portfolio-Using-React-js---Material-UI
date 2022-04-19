@@ -17,11 +17,7 @@ const ImageContainer = styled("div")(({ theme }) => ({
 }));
 
 
-const overlayTitle = styled("Typography")(({ theme }) => ({
-  fontSize:"2rem",
-  marginBottom:"16px",
-  
-}));
+
 
 const ImageoverLay = styled("div")(({ theme }) => ({
   position: "absolute",
@@ -107,7 +103,7 @@ export const Portfolio = () => {
                 
 
                 <ImageoverLay >
-                  <overlayTitle>{item.title}</overlayTitle>
+                  <Typography sx={bodyStyle.overlayTitle}>{item.title}</Typography>
                   <Button variant="contained">Visit</Button>
                 </ImageoverLay>
               </ImageContainer  >

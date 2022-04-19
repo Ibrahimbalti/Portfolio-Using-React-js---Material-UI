@@ -7,7 +7,6 @@ import { Box, Button, IconButton } from "@mui/material";
 import { CustomStyle } from "./HeaderStyle";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen"
 
-
 export default function Navbar({ navLink, handleDrawerToggle }) {
   return (
     <AppBar position="fixed" sx={CustomStyle.navbar}>
@@ -18,11 +17,11 @@ export default function Navbar({ navLink, handleDrawerToggle }) {
         <Box display={{ xs: "none", sm: "block" }}>
           <Box>
             {navLink.map((item, i) => (
-              <Link to={`${item.id}`}
+              <Link to={`${item.id}`} key={i}
               spy={true} smooth={true} offset={-70} duration={500}>
               <Button
                 sx={CustomStyle.navlinks}
-                key={i}
+                
                 color="inherit"
               >
                 {item.label}

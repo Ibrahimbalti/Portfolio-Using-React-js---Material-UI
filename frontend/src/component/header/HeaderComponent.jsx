@@ -35,7 +35,7 @@ export const HeaderComponent = () => {
         <Box sx={CustomStyle.HeaderContainer}>
           <Typography variant="h3" component="h4" sx={CustomStyle.headerTitle}>
             I'm a <span sx={{paddingRight:"5px"}}></span>
-            <Typed strings={["UI/UX Designer,|","Web developer"]} typeSpeed={30} backSpeed={50} loop/>
+            <Typed strings={["UI/UX Designer,","Web developer"]} typeSpeed={30} backSpeed={50} loop/>
           </Typography>
           <Typography variant="h3" component="h4" sx={CustomStyle.headerDsc}>
             I Create Website and Application , <br/>
